@@ -37,3 +37,12 @@ func TestPushThreeValueAndPopBackOneValue(t *testing.T) {
 	}
 }
 
+func TestPopBackTwoValueFromEmptyLinkedList(t *testing.T) {
+	ll := New()
+	ll.PopBack()
+	ll.PopBack()
+	size := ll.Size()
+	if size != 0 {
+		t.Errorf("wrong size, expected 0 and got %d", size)
+	}
+}
