@@ -1,7 +1,7 @@
 package linkedlist
 
 
-func (ll *LinkedList) PopBack(item Item) {
+func (ll *LinkedList) PopBack() {
 	if ll.size == 0 {
 		ll.head = nil
 		ll.tail =  nil
